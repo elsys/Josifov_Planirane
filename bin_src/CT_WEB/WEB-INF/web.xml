@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CT_WEB</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CT_SetCoordinatesPathServlet</display-name>
+    <servlet-name>CT_SetCoordinatesPathServlet</servlet-name>
+    <servlet-class>servlets.CT_SetCoordinatesPathServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CT_SetCoordinatesPathServlet</servlet-name>
+    <url-pattern>/CT_SetCoordinatesPathServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SaveConfig</display-name>
+    <servlet-name>SaveConfig</servlet-name>
+    <servlet-class>servlets.SaveConfig</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveConfig</servlet-name>
+    <url-pattern>/SaveConfig</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>ShowRoute</display-name>
+    <servlet-name>ShowRoute</servlet-name>
+    <servlet-class>servlets.ShowRoute</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowRoute</servlet-name>
+    <url-pattern>/mobile/ShowRoute</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>databaseService</servlet-name>
+    <servlet-class>publictransport.adminpanel.server.DatabaseService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>databaseService</servlet-name>
+    <url-pattern>/adminpanel/db</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>loginService</servlet-name>
+    <servlet-class>publictransport.adminpanel.server.LoginService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginService</servlet-name>
+    <url-pattern>/adminpanel/login</url-pattern>
+  </servlet-mapping>
+</web-app>
